@@ -183,7 +183,7 @@ const tierRows = [
   ["Local signage hosting", "1 screen", "Unlimited", "Unlimited"],
   ["PTZ camera control", "Local", "Local + remote cloud", "Local + remote cloud"],
   ["Reels (AI clipping)", "Local workflow", "Cloud Reels", "Auto from every service"],
-  ["Cloud live streaming (encoder built in)", "No", "No", "Included — per campus"],
+  ["Cloud live streaming (from OBS or vMix; built-in encoder coming soon)", "No", "No", "Included"],
   ["Stream-health alerts wired to your stream", "No", "No", "Included"],
 ];
 
@@ -263,7 +263,7 @@ const faqItems = [
   },
   {
     question: "Does Tech Manager fix problems automatically?",
-    answer: "Yes. Tech Manager includes a self-healing layer for common issues like OBS crashes, stream drops, camera reconnects, signage restarts, and cached local signage during internet outages.",
+    answer: "Not on its own. When a stream or recording stops unexpectedly, Tech Manager alerts the booth, the web, and your phones with a one-tap Restart, and nothing changes until someone taps it. Every offer and restart is logged.",
   },
   {
     question: "Why does Luminos need Tech Manager for AV support?",
@@ -375,8 +375,8 @@ const structuredData = [
           },
           {
             icon: "wrench-screwdriver",
-            title: "Self-healing, logged",
-            body: "A dropped stream restarts itself after 30 seconds; a starving bitrate steps down resolution; a stopped recording restarts; a filling disk cleans itself up. Every action is logged to your support history — nothing happens silently.",
+            title: "Self-healing, one tap away",
+            body: "When a stream or recording stops unexpectedly, Tech Manager alerts the booth, the web, and your phones with a one-tap Restart. Nothing changes until someone taps it, and every offer and restart is logged to your support history.",
           },
           {
             icon: "cpu-chip",
@@ -719,7 +719,7 @@ const structuredData = [
           ["Protocol relay", "Fires OSC, RossTalk, RTP-MIDI, HTTP, and Q-SYS QRC onto the booth network on behalf of the cloud — browsers can't open those sockets; Tech Manager can. PJLink projectors are monitored for power, lamp, and error state"],
           ["Telemetry", "Hardware snapshots every heartbeat: CPU, GPU, temperatures, memory, storage, displays, audio devices, USB (event-driven), network — plus hourly software and driver inventory"],
           ["Cloud link", "Outbound-only encrypted WebSocket — no port forwarding, no firewall changes, works behind church networks; booth pairing uses one-time, admin-issued enrollment codes that expire in 30 minutes"],
-          ["Self-healing", "Stream restart after a 30-second drop, bitrate step-down under strain, recording restart, and low-disk cleanup — every action logged to your support history"],
+          ["Self-healing", "A one-tap Restart offered on the booth, the web, and phones when a stream or recording drops — nothing changes until someone taps it, and every offer and restart is logged to your support history"],
           ["Volunteer remote", "LAN mobile console served from the booth on a QR link, secured with per-session rotating tokens — volunteers' phones never need accounts"],
           ["Reels engine", "Local Whisper transcription (five model sizes up to large-v3), bundled FFmpeg rendering at 1080×1920, 1080×1080, and 1920×1080, with caption burn-in and branded intros"],
           ["Every feature, every plan", "Tech Manager's booth features aren't tier-gated — download it free and the whole booth toolkit comes with it"],
@@ -794,7 +794,7 @@ const structuredData = [
   </script>
   <KBQuestions heading="Booth questions churches actually ask." items={[
     { question: "What happens if the booth PC crashes mid-service?", href: "/kb/articles/booth-pc-crashes-mid-service/" },
-    { question: "What does Tech Manager fix before you notice?", href: "/kb/articles/tech-manager-self-healing-explained/" },
+    { question: "How does Tech Manager's self-healing work?", href: "/kb/articles/tech-manager-self-healing-explained/" },
     { question: "A tech director's Tuesday: the maintenance rhythm that saves Sundays", href: "/kb/articles/tech-director-tuesday-maintenance-rhythm/" },
     { question: "What does Tech Manager actually send? A tour of the booth heartbeat", href: "/kb/articles/tech-manager-heartbeat-telemetry-tour/" },
   ]} />

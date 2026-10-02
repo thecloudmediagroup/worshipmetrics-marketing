@@ -39,7 +39,7 @@ const clipFeatures = [
 const faqs = [
   {
     question: "How do we get streaming turned on?",
-    answer: "We enable streaming for each church personally — it keeps every campus's ingest provisioned right and Sunday-safe. Request access and we'll switch it on with you, then confirm your first test stream together before it counts.",
+    answer: "We enable streaming for each church personally — it keeps every church's ingest provisioned right and Sunday-safe. Request access and we'll switch it on with you, then confirm your first test stream together before it counts.",
   },
   {
     question: "Do we have to change our encoder or software?",
@@ -223,7 +223,7 @@ const structuredData = [
           Encoder load, dropped frames, bitrate history, per-event logs &mdash; live, on a dashboard, with alerts the moment anything drops. Your congregation should never know about a problem before you do.
         </p>
         <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
-          And when something does go wrong, you're not alone: call 910-WORSHIP any day of the week and a person who runs church production answers &mdash; with your system's live health data already in front of them.
+          And when something does go wrong, you're not alone: call 910-WORSHIP any hour. Journey, our AI phone assistant, answers with your setup in view and brings in a person who runs church production when you need one.
         </p>
         <div class="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
           <a href="/av-monitoring" class="btn-primary">See stream monitoring</a>
@@ -277,7 +277,7 @@ const structuredData = [
               { device: "phone", role: "The pastor", action: "Checks the service is live", where: "From the road" },
             ]}
             churchTitle="One feed out"
-            churchLines={["Tech Manager encodes — YouTube,", "Facebook, and your watch page."]}
+            churchLines={["Your booth PC streams — YouTube,", "Facebook, and your watch page."]}
             footnote="One feed in, every destination out — recorded, archived, and ready to clip from anywhere."
             ariaJob="run the live stream from anywhere"
           />
@@ -337,7 +337,7 @@ const structuredData = [
           ["Clip renders", "1080×1920, 1920×1080, and 1080×1080 at 30 fps — burned captions (4 styles), 6 lower-third looks, 5 font presets, brand color and logo, intro/outro panels, direct YouTube publishing"],
           ["Stream health", "5-second telemetry samples (bitrate, FPS, encoder load, dropped frames, CPU, RAM, disk) with a 45-second reconnect grace window and a scored report with per-issue recommendations"],
           ["Viewer analytics", "Per-minute concurrent viewer sampling; peak and average viewers roll into service attendance automatically when the broadcast ends"],
-          ["Fair use", "20 stream-hours and 2,500 embedded viewer-hours per campus per month, with published flat overages and an alert at 80% — YouTube and Facebook viewers are never metered, and we never stop a live service over a quota"],
+          ["Fair use", "20 stream-hours and 2,500 embedded viewer-hours per month, with published flat overages and an alert at 80% — YouTube and Facebook viewers are never metered, and we never stop a live service over a quota"],
         ].map(([term, detail], index) => (
           <div class={`grid gap-1 px-6 py-4 sm:grid-cols-[minmax(0,0.32fr)_minmax(0,0.68fr)] sm:gap-6 ${index % 2 === 0 ? "bg-slate-50" : "bg-white"}`}>
             <p class="text-sm font-semibold text-slate-900">{term}</p>

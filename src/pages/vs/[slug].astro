@@ -25,7 +25,7 @@ const competitors = {
     shines:
       "BoxCast has served church streaming for years: reliable broadcasts, multi-destination streaming, an embeddable player, and TV apps. If your church only needs a pipe from the booth to the internet, BoxCast does that job.",
     different:
-      "Sunday isn't just a stream — it's a plan, a volunteer team, slides, a booth, and a pile of gear that all have to work at 9am. WorshipMetrics is the only platform where the stream, the plan, the people, and the monitoring live in one login, backed by humans seven days a week.",
+      "Sunday isn't just a stream — it's a plan, a volunteer team, slides, a booth, and a pile of gear that all have to work at 9am. WorshipMetrics is the only platform where the stream, the plan, the people, and the monitoring live in one login, backed by AI support any hour and people on call.",
     matrix: {
       "Streaming destination with multi-platform fan-out": true,
       "Automatic recordings library": true,
@@ -45,12 +45,12 @@ const competitors = {
       {
         question: "Can WorshipMetrics do what BoxCast does?",
         answer:
-          "Yes — point your encoder at WorshipMetrics and we fan the stream out to YouTube, Facebook, your website embed, and any custom RTMP destination, with automatic recordings after every service.",
+          "Yes — once we switch streaming on for your church, point your encoder at WorshipMetrics and we fan the stream out to YouTube, Facebook, your website embed, and any custom RTMP destination, with automatic recordings after every service.",
       },
       {
         question: "What does WorshipMetrics add that BoxCast doesn't?",
         answer:
-          "Everything around the stream: service planning, volunteer scheduling, presentation and stage display, switcher and camera control, AV device monitoring with alerts, system documentation, AI sermon clips, and phone support from real church production people seven days a week.",
+          "Everything around the stream: service planning, volunteer scheduling, presentation and stage display, switcher and camera control, AV device monitoring with alerts, system documentation, AI sermon clips, and phone support any hour, with church production people on call.",
       },
       {
         question: "How hard is it to switch from BoxCast?",
@@ -94,7 +94,7 @@ const competitors = {
       {
         question: "What about stream reliability?",
         answer:
-          "We monitor your stream's health in real time — encoder load, dropped frames, bitrate history — and alert you the moment anything degrades. And unlike a dashboard alone, there's a human at 910-WORSHIP seven days a week who already has your system data in front of them.",
+          "We monitor your stream's health in real time — encoder load, dropped frames, bitrate history — and alert you the moment anything degrades. And unlike a dashboard alone, 910-WORSHIP answers any hour with your system data in front of it, and brings in a person when you need one.",
       },
       {
         question: "Is WorshipMetrics cheaper than Resi?",
@@ -107,13 +107,13 @@ const competitors = {
     name: "Restream",
     title: "Restream Alternative for Churches",
     metaDescription:
-      "Comparing WorshipMetrics vs Restream? Both fan one feed out to many destinations. WorshipMetrics is built for churches — with service planning, volunteers, presentation, AV monitoring, and humans on call 7 days a week.",
+      "Comparing WorshipMetrics vs Restream? Both fan one feed out to many destinations. WorshipMetrics is built for churches — with service planning, volunteers, presentation, AV monitoring, and AI phone support any hour with people on call.",
     heroLine:
       "Restream is a solid general-purpose multistreaming tool. But your church isn't a general-purpose streamer — and Sunday needs more than fan-out.",
     shines:
       "Restream does one thing well for a broad market: take one feed and push it to many platforms, with a browser studio and chat aggregation. For a solo creator, that's often enough.",
     different:
-      "A church service has a plan, a volunteer team, lyrics on screens, a booth full of gear, and a congregation that notices when any of it fails. WorshipMetrics does the fan-out and the rest of Sunday: planning, scheduling, presentation, monitoring, recordings, sermon clips — with real humans who run church production answering the phone seven days a week.",
+      "A church service has a plan, a volunteer team, lyrics on screens, a booth full of gear, and a congregation that notices when any of it fails. WorshipMetrics does the fan-out and the rest of Sunday: planning, scheduling, presentation, monitoring, recordings, sermon clips — with AI phone support any hour and people who run church production on call behind it.",
     matrix: {
       "Streaming destination with multi-platform fan-out": true,
       "Automatic recordings library": true,
@@ -214,7 +214,7 @@ const cellLabel = (value) => (value === true ? "Included" : value === false ? "�
               </tr>
             ))}
             <tr class="border-t border-slate-200 bg-indigo-50/50">
-              <td class="px-6 py-3.5 text-sm font-semibold text-slate-900">Human support, 7 days a week, from church production techs</td>
+              <td class="px-6 py-3.5 text-sm font-semibold text-slate-900">Phone support any hour, with church production techs on call</td>
               <td class="px-6 py-3.5 text-sm font-semibold text-indigo-600">910-WORSHIP</td>
               <td class="px-6 py-3.5 text-sm text-slate-500">Check their plans</td>
             </tr>
@@ -250,7 +250,7 @@ const cellLabel = (value) => (value === true ? "Included" : value === false ? "�
       </div>
       <div class="mt-10 grid gap-6 md:grid-cols-3">
         {[
-          { title: "Point your encoder at us", body: "vMix, OBS, or any RTMP encoder — swap the ingest URL and key once. That's the whole migration." },
+          { title: "Point your encoder at us", body: "We switch streaming on for your church and run a first test stream with you. Then vMix, OBS, or any RTMP encoder swaps the ingest URL and key once. That's the whole migration." },
           { title: "Re-add your destinations", body: "YouTube, Facebook, your website embed, custom RTMP — each one is a click, and your feed fans out from there." },
           { title: "Bring the team along", body: "Import your people via CSV, build this week's plan, and Sunday runs through one platform — with 910-WORSHIP behind it." },
         ].map(({ title, body }, index) => (
@@ -287,7 +287,7 @@ const cellLabel = (value) => (value === true ? "Included" : value === false ? "�
     <div class="mx-auto max-w-4xl rounded-[2rem] border border-slate-200 bg-slate-50 p-10 text-center shadow-sm sm:p-12">
       <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Your live stream, handled.</h2>
       <p class="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-slate-600 sm:text-lg">
-        Start free, point your encoder at WorshipMetrics, and see what Sunday feels like when one platform carries it.
+        Start free, request streaming access, and see what Sunday feels like when one platform carries it.
       </p>
       <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
         <a href={`${APP_URL}/sign-up`} class="btn-primary text-base px-8 py-3.5" data-wm-track="cta_click" data-wm-track-label={`vs_${slug}_footer_sign_up_free`} data-wm-track-location={`vs_${slug}_footer`}>Sign up free</a>

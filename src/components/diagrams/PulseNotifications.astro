@@ -30,9 +30,9 @@ const messages = [
     when: "SUN · 10:22 AM",
     tone: "#2B7FF0",
     lines: [
-      "Mid-service: bitrate dipped, so",
-      "self-healing stepped down one",
-      "notch. The stream never blinked.",
+      "Mid-service: the recording",
+      "stopped. Tap Restart and it's",
+      "rolling again in seconds.",
     ],
   },
 ];
@@ -40,7 +40,7 @@ const messages = [
 const channels = ["EMAIL · INCLUDED", "SMS · OPTIONAL", "WEB PUSH", "IN-APP"];
 
 const LABEL =
-  "Diagram: Pulse watches every device, stream, and machine all week, then reaches you where you will actually see it — email included, SMS optional, web push, and in-app. Three example messages on a phone: a Saturday 6 PM all-clear check-in saying you're ready for Sunday with 23 of 23 devices green; a Saturday 9:14 PM warning that the FOH audio interface stopped responding with a suggestion to arrive 20 minutes early; and a Sunday 10:22 AM note that self-healing caught a bitrate dip and the stream never went down.";
+  "Diagram: Pulse watches every device, stream, and machine all week, then reaches you where you will actually see it — email included, SMS optional, web push, and in-app. Three example messages on a phone: a Saturday 6 PM all-clear check-in saying you're ready for Sunday with 23 of 23 devices green; a Saturday 9:14 PM warning that the FOH audio interface stopped responding with a suggestion to arrive 20 minutes early; and a Sunday 10:22 AM note that the recording stopped, with a one-tap Restart to start it again.";
 
 // Bubble geometry: header line + text lines, computed per message.
 const bubbleHeight = (n: number) => 30 + n * 16;

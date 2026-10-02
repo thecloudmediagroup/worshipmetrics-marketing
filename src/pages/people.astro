@@ -16,7 +16,7 @@ const features = [
   {
     icon: "identification",
     title: "One directory, your vocabulary",
-    body: "Members, guests, and attenders — plus unlimited custom types your church defines. Every profile carries labeled contact methods, photo, birthday with auto-computed age, join date, anniversary, and campus.",
+    body: "Members, guests, and attenders — plus unlimited custom types your church defines. Every profile carries labeled contact methods, photo, birthday with auto-computed age, join date, and anniversary.",
   },
   {
     icon: "home",
@@ -228,7 +228,6 @@ const structuredData = {
           ["Chat polls", "2–10 options, single or multiple choice, vote-change semantics, double-vote-proof by design"],
           ["Auth & team invites", "Role-carrying email invites with cryptographically random tokens and 7-day expiry; joining an existing church always requires an invite"],
           ["Public QR flows", "Org-wide check-in with print-ready QR codes, rate-limited server-side; returning-attender matching tiers: email, then phone, then name + birthday"],
-          ["Campuses", "Each person record carries a campus, so multi-site churches keep their directory organized in one place"],
           ["Users & pricing", "Unlimited users and unlimited people on every plan, including Free — the whole volunteer team lives in it"],
         ].map(([term, detail], index) => (
           <div class={`grid gap-1 px-6 py-4 sm:grid-cols-[minmax(0,0.32fr)_minmax(0,0.68fr)] sm:gap-6 ${index % 2 === 0 ? "bg-slate-50" : "bg-white"}`}>
